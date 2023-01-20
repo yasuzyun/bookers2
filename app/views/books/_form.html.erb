@@ -33,6 +33,10 @@
         raty(raty_elem,option);
       });
     </script>
+    
+    <% else %>
+    <%= render "static_rate", book: book %>
+  <% end %>
   
   <div class="form-group">
     <%= f.submit class: 'btn btn-success' %>
